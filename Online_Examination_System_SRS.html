@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<!-- saved from url=(1303)https://embed.lovable.app/document-preview/Online_Examination_System_SRS.docx#https%3A%2F%2Fid-preview-%2Deddec524-a70d-4c58-ac41-99415408442b.lovable.app%2F__l5e%2Fdocuments%2FOnline_Examination_System_SRS.docx%3F__lovable_token%3DeyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9%252EeyJ1c2VyX2lkIjoiUjJhcVNodGtVRldDb3JtN2IyUVNDY3dWUEhHMiIsInByb2plY3RfaWQiOiJlZGRlYzUyNC1hNzBkLTRjNTgtYWM0MS05OTQxNTQwODQ0MmIiLCJhY2Nlc3NfdHlwZSI6InByb2plY3QiLCJpc3MiOiJsb3ZhYmxlLWFwaSIsInN1YiI6ImVkZGVjNTI0LWE3MGQtNGM1OC1hYzQxLTk5NDE1NDA4NDQyYiIsImF1ZCI6WyJsb3ZhYmxlLWFwcCJdLCJleHAiOjE3ODYwNjcyMDcsIm5iZiI6MTc4NTQ2MjQwNywiaWF0IjoxNzg1NDYyNDA3fQ%252EP_FlzeKJ__gEW47CMsgaszTHvdOE9dJP2d58n5wZH-hEjFfPNO4wgdLstjYF99mLxqfc63XfR719_IwnH6YDOHEqX8emB_QMwipsTscYlT3dsmlwEecWBvSeUqYz1Ztni2BA-tAycwGF6AtUwwYmEbEgCq0M-t7kyzL85n3FyrF1-4MmtoU8A0ma5g-DRB8bkHIum0-Gof3fAiYYLz8VOBYcnhcPi3I2cCYq2Ydfskx6vbwXoMEvxlxUY0txF0r_qd-zcEa0wdPbxMDXQxrJGSX8rm1e9UycI-KReEfHC_RtvVX4TUFz7Vkn2K47R3WDYGZR5gbGOTdJp3XObzgpKXJIzf4AOMVQFiuJGJHO2dsZnj5Mn-jzxHI8rngQpNt-b5CGgLmXN3lSulwCkJsfK-Fj0-VMcoZwa_YBPCYhf5xqxupwOy2mvnJ_f1ILg6t88p2Un2wdLC-ZJm6VTm584RZ0orQezDHO8DxLr9iWFDEVKEDP8Hxo1zf7wsbP-ghhv4Ia9tTPIkxO4MuMOAn2Uz-dG7udNpSfAnKbq93RjjT8mXBQp4wQ__Jbbc0ZjPXK4sfhtgw5bzyag3zko8FUeKsusZxjVrzobn_t9-XBojh3rMPzMNm19Qkf7EUh5YUdFWlWwjqWApF1jzlY2SHY6tG79n1W5ECFt7UVvb09OoI -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview: Online_Examination_System_SRS.docx</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #18181b;
+      color: #a1a1aa;
+      min-height: 100vh;
+    }
+    #spinner {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      pointer-events: none;
+      z-index: 10;
+    }
+    #spinner .dot {
+      width: 32px;
+      height: 32px;
+      border: 3px solid #3f3f46;
+      border-top-color: #a1a1aa;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #container video { max-width: 100%; max-height: 100vh; }
+    #container audio { width: 100%; max-width: 500px; }
+    #container iframe, #container embed { width: 100%; height: 100vh; border: none; }
+    /* Direct child only: descendant matching leaks the full-viewport dark
+       style into pres nested in .md-wrapper / .nb-* wrappers. */
+    #container > pre {
+      background: #27272a;
+      color: #e4e4e7;
+      padding: 1.5rem;
+      font-size: 13px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+    }
+    #container > pre.code-preview {
+      color: #c9d1d9;
+      font-family: "Roboto Mono", Menlo, Monaco, Consolas, monospace;
+    }
+    /* highlight.js theme — matches Lovable code editor (PrismCodeTheme.ts) */
+    .hljs-comment, .hljs-quote { color: #8b949e; }
+    .hljs-string, .hljs-attr { color: #a5d6ff; }
+    .hljs-number, .hljs-literal { color: #79c0ff; }
+    .hljs-built_in, .hljs-type { color: #ffa657; }
+    .hljs-keyword, .hljs-selector-tag { color: oklch(0.833 0.145 321.434); }
+    .hljs-function, .hljs-title { color: #d2a8ff; }
+    .hljs-variable, .hljs-template-variable { color: #c9d1d9; }
+    .hljs-name, .hljs-tag { color: #7ee787; }
+    .hljs-attribute { color: #79c0ff; }
+    .hljs-regexp, .hljs-link { color: #a5d6ff; }
+    .hljs-symbol, .hljs-bullet { color: #ffa657; }
+    .hljs-deletion { color: #ff7b72; }
+    .hljs-addition { color: #7ee787; }
+    .doc-wrapper {
+      background: gray;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+    }
+    .sheet-wrapper {
+      background: #fff;
+      width: 100%;
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .sheet-wrapper table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: max-content;
+      min-width: 100%;
+      table-layout: fixed;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #37352f;
+    }
+    /* The renderer promotes the first row to <th> elements. */
+    .sheet-wrapper th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #f7f6f3;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #9b9a97;
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e9e9e7;
+      border-right: 1px solid #e9e9e7;
+    }
+    .sheet-wrapper td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #ededec;
+      border-right: 1px solid #ededec;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sheet-wrapper td:empty {
+      background: #fafaf8;
+    }
+    .sheet-wrapper tr:nth-child(even) td {
+      background: #fafaf8;
+    }
+    .sheet-wrapper tr:hover td {
+      background: #f7f6f3;
+    }
+    .sheet-tabs {
+      display: flex;
+      gap: 0;
+      background: #f7f6f3;
+      border-top: 1px solid #e9e9e7;
+      padding: 0;
+      overflow-x: auto;
+      flex-shrink: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      scrollbar-width: none;
+    }
+    .sheet-tabs::-webkit-scrollbar {
+      display: none;
+    }
+    .sheet-tab {
+      padding: 8px 16px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 400;
+      color: #9b9a97;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+    .sheet-tab:hover {
+      color: #37352f;
+      background: #efedea;
+    }
+    .sheet-tab-active {
+      color: #37352f;
+      font-weight: 500;
+      border-bottom-color: #37352f;
+    }
+    .pptx-wrapper {
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background: #52525b;
+    }
+    .pptx-slide {
+      flex-shrink: 0;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      max-width: 100%;
+    }
+    .md-wrapper {
+      background: #fff;
+      color: #1f2328;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      padding: 32px 48px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .md-wrapper h1, .md-wrapper h2, .md-wrapper h3,
+    .md-wrapper h4, .md-wrapper h5, .md-wrapper h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #1f2328;
+    }
+    .md-wrapper h1 { font-size: 2em; padding-bottom: 0.3em; border-bottom: 1px solid #d1d9e0; }
+    .md-wrapper h2 { font-size: 1.5em; padding-bottom: 0.3em; border-bottom: 1px solid #d1d9e0; }
+    .md-wrapper h3 { font-size: 1.25em; }
+    .md-wrapper p { margin-bottom: 16px; }
+    .md-wrapper a { color: #0969da; text-decoration: none; }
+    .md-wrapper a:hover { text-decoration: underline; }
+    .md-wrapper code {
+      background: #eff1f3;
+      padding: 0.2em 0.4em;
+      border-radius: 6px;
+      font-size: 85%;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    .md-wrapper pre {
+      background: #f6f8fa;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-bottom: 16px;
+    }
+    .md-wrapper pre code {
+      background: none;
+      padding: 0;
+      font-size: 85%;
+      line-height: 1.45;
+    }
+    .md-wrapper ul, .md-wrapper ol {
+      padding-left: 2em;
+      margin-bottom: 16px;
+    }
+    .md-wrapper li + li { margin-top: 4px; }
+    .md-wrapper blockquote {
+      padding: 0 1em;
+      color: #656d76;
+      border-left: 0.25em solid #d1d9e0;
+      margin-bottom: 16px;
+    }
+    .md-wrapper table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .md-wrapper th, .md-wrapper td {
+      border: 1px solid #d1d9e0;
+      padding: 6px 13px;
+    }
+    .md-wrapper th { font-weight: 600; background: #f6f8fa; }
+    .md-wrapper img { max-width: 100%; }
+    .md-wrapper hr { height: 0.25em; background: #d1d9e0; border: 0; margin: 24px 0; }
+    .mermaid-wrapper {
+      background: #fff;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      padding: 32px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .mermaid-wrapper svg {
+      max-width: 100%;
+      height: auto;
+    }
+    .pdf-wrapper {
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 0;
+      background: #52525b;
+    }
+    .pdf-wrapper canvas {
+      display: block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .nb-wrapper {
+      background: #fff;
+      color: #1f2328;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      padding: 24px max(32px, calc((100% - 900px) / 2));
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .nb-cell {
+      margin-bottom: 2px;
+      border-left: 3px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .nb-cell:hover { border-left-color: #0969da; }
+    .nb-md {
+      padding: 12px 16px;
+    }
+    .nb-md h1, .nb-md h2, .nb-md h3, .nb-md h4, .nb-md h5, .nb-md h6 {
+      margin-top: 20px; margin-bottom: 10px; font-weight: 600; line-height: 1.25; color: #1f2328;
+    }
+    .nb-md h1 { font-size: 1.8em; border-bottom: 2px solid #d1d9e0; padding-bottom: 0.3em; }
+    .nb-md h2 { font-size: 1.4em; border-bottom: 1px solid #d1d9e0; padding-bottom: 0.3em; }
+    .nb-md h3 { font-size: 1.2em; }
+    .nb-md p { margin-bottom: 12px; }
+    .nb-md a { color: #0969da; text-decoration: none; }
+    .nb-md a:hover { text-decoration: underline; }
+    .nb-md code {
+      background: #eff1f3; padding: 0.2em 0.4em; border-radius: 4px; font-size: 85%;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    #container .nb-md pre {
+      background: #f6f8fa; padding: 12px 16px; border-radius: 6px;
+      overflow-x: auto; margin-bottom: 12px; border: 1px solid #e8ebef;
+      color: #1f2328; height: auto; width: auto;
+    }
+    .nb-md pre code { background: none; padding: 0; }
+    .nb-md ul, .nb-md ol { padding-left: 2em; margin-bottom: 12px; }
+    .nb-md li + li { margin-top: 4px; }
+    .nb-md img { max-width: 100%; border-radius: 4px; }
+    .nb-md table { border-collapse: collapse; margin-bottom: 12px; width: 100%; }
+    .nb-md th, .nb-md td { border: 1px solid #d1d9e0; padding: 6px 13px; }
+    .nb-md th { font-weight: 600; background: #f6f8fa; }
+    .nb-md blockquote {
+      padding: 0 1em; color: #656d76; border-left: 0.25em solid #d1d9e0; margin-bottom: 12px;
+    }
+    .nb-input-row { display: flex; gap: 0; align-items: stretch; }
+    .nb-prompt {
+      min-width: 58px; text-align: right; padding-right: 8px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 12px; color: #57606a; padding-top: 10px; flex-shrink: 0;
+      user-select: none;
+    }
+    #container .nb-code {
+      flex: 1; min-width: 0;
+      background: #f6f8fa; border: 1px solid #d1d9e0; border-radius: 4px;
+      padding: 10px 14px; margin: 0;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px; line-height: 1.5; white-space: pre; word-break: normal;
+      color: #1f2328; overflow-x: auto; tab-size: 4;
+      height: auto;
+    }
+    .nb-code code { font-family: inherit; }
+    /* Light highlight.js theme for notebook code cells (GitHub-like) */
+    .nb-code .hljs-comment, .nb-code .hljs-quote { color: #6a737d; }
+    .nb-code .hljs-string, .nb-code .hljs-attr { color: #032f62; }
+    .nb-code .hljs-number, .nb-code .hljs-literal { color: #005cc5; }
+    .nb-code .hljs-built_in, .nb-code .hljs-type { color: #e36209; }
+    .nb-code .hljs-keyword, .nb-code .hljs-selector-tag { color: #d73a49; }
+    .nb-code .hljs-function, .nb-code .hljs-title { color: #6f42c1; }
+    .nb-code .hljs-variable, .nb-code .hljs-template-variable { color: #1f2328; }
+    .nb-code .hljs-name, .nb-code .hljs-tag { color: #22863a; }
+    .nb-code .hljs-attribute { color: #005cc5; }
+    .nb-code .hljs-regexp, .nb-code .hljs-link { color: #032f62; }
+    .nb-code .hljs-symbol, .nb-code .hljs-bullet { color: #e36209; }
+    .nb-code .hljs-deletion { color: #b31d28; }
+    .nb-code .hljs-addition { color: #22863a; }
+    .nb-code .hljs-meta { color: #6a737d; }
+    /* KaTeX overrides for notebook markdown cells */
+    .nb-md .katex-display { margin: 0.5em 0; overflow-x: auto; }
+    .nb-output {
+      margin-left: 58px; margin-top: 0; padding: 10px 14px;
+      border: 1px solid #e8ebef; border-top: none; border-radius: 0 0 4px 4px;
+      background: #fff;
+      font-size: 13px; line-height: 1.5;
+    }
+    #container .nb-output pre {
+      margin: 0; white-space: pre-wrap; word-break: break-word;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px; color: #1f2328;
+      background: transparent; padding: 0;
+      height: auto; width: auto;
+    }
+    .nb-output img { max-width: 100%; display: block; margin: 4px 0; }
+    .nb-error { background: #fff5f5; border-color: #fecaca; }
+    #container .nb-error pre { color: #b91c1c; }
+    #container .nb-stream pre { color: #1f2328; }
+    .nb-html-output { overflow-x: auto; }
+    .nb-html-output table { border-collapse: collapse; font-size: 13px; }
+    .nb-html-output th, .nb-html-output td { border: 1px solid #d1d9e0; padding: 4px 10px; text-align: left; }
+    .nb-html-output th { background: #f6f8fa; font-weight: 600; }
+    .nb-html-output tr:nth-child(even) { background: #fafafa; }
+    #container .nb-raw {
+      background: #f6f8fa; border: 1px solid #d1d9e0; border-radius: 4px;
+      padding: 10px 14px; margin-left: 58px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px; white-space: pre-wrap; color: #1f2328;
+      height: auto; width: auto;
+    }
+    .img-wrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .img-stage {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      width: 100%;
+      background-image:
+        linear-gradient(45deg, #27272a 25%, transparent 25%),
+        linear-gradient(-45deg, #27272a 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #27272a 75%),
+        linear-gradient(-45deg, transparent 75%, #27272a 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+      background-color: #3f3f46;
+    }
+    .img-stage img, .img-stage canvas {
+      max-width: 100%;
+      max-height: calc(100vh - 60px);
+      object-fit: contain;
+    }
+    .img-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: #27272a;
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .img-btn {
+      padding: 4px 12px;
+      border: 1px solid #52525b;
+      border-radius: 6px;
+      background: #3f3f46;
+      color: #e4e4e7;
+      cursor: pointer;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .img-btn:hover { background: #52525b; }
+    .img-btn-active {
+      background: #52525b;
+      border-color: #71717a;
+    }
+    .img-info {
+      margin-left: auto;
+      color: #a1a1aa;
+      font-size: 12px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    #error {
+      color: #ef4444;
+      display: none;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><script src="https://unpkg.com/docx-preview@0.3.3/dist/docx-preview.min.js"></script></head>
+<body>
+  <div id="spinner" style="display: none;"><div class="dot"></div><span>Loading preview…</span></div>
+  <div id="container" data-preview-ready="true"><div class="doc-wrapper"><!--docxjs library predefined styles--><style>
+.docx-content-wrapper { background: gray; padding: 30px; padding-bottom: 0px; display: flex; flex-flow: column; align-items: center; } 
+.docx-content-wrapper>section.docx-content { background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); margin-bottom: 30px; }
+.docx-content { color: black; hyphens: auto; text-underline-position: from-font; }
+section.docx-content { box-sizing: border-box; display: flex; flex-flow: column nowrap; position: relative; overflow: hidden; }
+section.docx-content>article { margin-bottom: auto; z-index: 1; }
+section.docx-content>footer { z-index: 1; }
+.docx-content table { border-collapse: collapse; }
+.docx-content table td, .docx-content table th { vertical-align: top; }
+.docx-content p { margin: 0pt; min-height: 1em; }
+.docx-content span { white-space: pre-wrap; overflow-wrap: break-word; }
+.docx-content a { color: inherit; text-decoration: inherit; }
+.docx-content svg { fill: transparent; }
+</style><!--docxjs document styles--><style>.docx-content span {
+  font-family: Arial;
+  min-height: 11.00pt;
+  font-size: 11.00pt;
+}
+p.docx-content_title span {
+  min-height: 28.00pt;
+  font-size: 28.00pt;
+}
+p.docx-content_heading1 span {
+  color: #2E74B5;
+  min-height: 16.00pt;
+  font-size: 16.00pt;
+}
+p.docx-content_heading2 span {
+  color: #2E74B5;
+  min-height: 13.00pt;
+  font-size: 13.00pt;
+}
+p.docx-content_heading3 span {
+  color: #1F4D78;
+  min-height: 12.00pt;
+  font-size: 12.00pt;
+}
+p.docx-content_heading4 span {
+  font-style: italic;
+  color: #2E74B5;
+}
+p.docx-content_heading5 span {
+  color: #2E74B5;
+}
+p.docx-content_heading6 span {
+  color: #1F4D78;
+}
+p.docx-content_strong span {
+  font-weight: bold;
+}
+span.docx-content_hyperlink {
+  color: #0563C1;
+  text-decoration: underline;
+}
+span.docx-content_footnotereference {
+}
+p.docx-content_footnotetext {
+  margin-bottom: 0.00pt;
+  line-height: 1.00;
+}
+p.docx-content_footnotetext span {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+p.docx-content_footnotetext span {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+span.docx-content_footnotetextchar {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+span.docx-content_footnotetextchar p {
+  margin-bottom: 0.00pt;
+  line-height: 1.00;
+}
+span.docx-content_footnotetextchar {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+span.docx-content_endnotereference {
+}
+p.docx-content_endnotetext {
+  margin-bottom: 0.00pt;
+  line-height: 1.00;
+}
+p.docx-content_endnotetext span {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+p.docx-content_endnotetext span {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+span.docx-content_endnotetextchar {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+span.docx-content_endnotetextchar p {
+  margin-bottom: 0.00pt;
+  line-height: 1.00;
+}
+span.docx-content_endnotetextchar {
+  min-height: 10.00pt;
+  font-size: 10.00pt;
+}
+p.docx-content_heading1 {
+  margin-top: 14.00pt;
+  margin-bottom: 7.00pt;
+}
+p.docx-content_heading1 span {
+  font-family: Arial;
+  font-weight: bold;
+  color: #1F4E79;
+  min-height: 14.00pt;
+  font-size: 14.00pt;
+}
+p.docx-content_heading2 {
+  margin-top: 10.00pt;
+  margin-bottom: 5.00pt;
+}
+p.docx-content_heading2 span {
+  font-family: Arial;
+  font-weight: bold;
+  color: #2E75B6;
+  min-height: 12.00pt;
+  font-size: 12.00pt;
+}
+</style><!--docxjs document numbering styles--><style>p.docx-content-num-1-0:before {
+  content: "●\9";
+  counter-increment: docx-content-num-1-0;
+}
+p.docx-content-num-1-0 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 36.00pt;
+}
+p.docx-content-num-1-0 {
+  counter-reset: docx-content-num-1-1 0;
+}
+p.docx-content-num-1-1:before {
+  content: "○\9";
+  counter-increment: docx-content-num-1-1;
+}
+p.docx-content-num-1-1 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 72.00pt;
+}
+p.docx-content-num-1-1 {
+  counter-reset: docx-content-num-1-2 0;
+}
+p.docx-content-num-1-2:before {
+  content: "■\9";
+  counter-increment: docx-content-num-1-2;
+}
+p.docx-content-num-1-2 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 108.00pt;
+}
+p.docx-content-num-1-2 {
+  counter-reset: docx-content-num-1-3 0;
+}
+p.docx-content-num-1-3:before {
+  content: "●\9";
+  counter-increment: docx-content-num-1-3;
+}
+p.docx-content-num-1-3 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 144.00pt;
+}
+p.docx-content-num-1-3 {
+  counter-reset: docx-content-num-1-4 0;
+}
+p.docx-content-num-1-4:before {
+  content: "○\9";
+  counter-increment: docx-content-num-1-4;
+}
+p.docx-content-num-1-4 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 180.00pt;
+}
+p.docx-content-num-1-4 {
+  counter-reset: docx-content-num-1-5 0;
+}
+p.docx-content-num-1-5:before {
+  content: "■\9";
+  counter-increment: docx-content-num-1-5;
+}
+p.docx-content-num-1-5 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 216.00pt;
+}
+p.docx-content-num-1-5 {
+  counter-reset: docx-content-num-1-6 0;
+}
+p.docx-content-num-1-6:before {
+  content: "●\9";
+  counter-increment: docx-content-num-1-6;
+}
+p.docx-content-num-1-6 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 252.00pt;
+}
+p.docx-content-num-1-6 {
+  counter-reset: docx-content-num-1-7 0;
+}
+p.docx-content-num-1-7:before {
+  content: "●\9";
+  counter-increment: docx-content-num-1-7;
+}
+p.docx-content-num-1-7 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 288.00pt;
+}
+p.docx-content-num-1-7 {
+  counter-reset: docx-content-num-1-8 0;
+}
+p.docx-content-num-1-8:before {
+  content: "●\9";
+  counter-increment: docx-content-num-1-8;
+}
+p.docx-content-num-1-8 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 324.00pt;
+}
+p.docx-content-num-2-0:before {
+  content: "•\9";
+  counter-increment: docx-content-num-2-0;
+}
+p.docx-content-num-2-0 {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: none;
+  text-indent: -18.00pt;
+  margin-left: 36.00pt;
+}
+.docx-content-wrapper {
+  counter-reset: docx-content-num-1-0 0 docx-content-num-1-1 0 docx-content-num-1-2 0 docx-content-num-1-3 0 docx-content-num-1-4 0 docx-content-num-1-5 0 docx-content-num-1-6 0 docx-content-num-1-7 0 docx-content-num-1-8 0 docx-content-num-2-0 0;
+}
+</style><div class="docx-content-wrapper"><section class="docx-content" style="padding: 72pt; width: 612pt; min-height: 792pt;"><header style="margin-top: calc(-48.8px); min-height: calc(48.8px);"><p style="text-align: right;"><span style="color: rgb(119, 119, 119); min-height: 9pt; font-size: 9pt;">Online Examination System - SRS v1.0</span></p></header><article><p style="margin-bottom: 4pt; text-align: center;"><span style="font-weight: bold; min-height: 20pt; font-size: 20pt;">Requirement Specification Document</span></p><p style="margin-bottom: 3pt; text-align: center;"><span style="font-weight: bold; color: rgb(31, 78, 121); min-height: 15pt; font-size: 15pt;">Online Examination System</span></p><p style="margin-bottom: 16pt; text-align: center;"><span style="color: rgb(85, 85, 85); min-height: 11pt; font-size: 11pt;">Week 1 - Requirement Analysis and Student / User Database Module</span></p><table style="width: 468pt;"><colgroup><col style="width: 160pt;"><col style="width: 308pt;"></colgroup><tr><td style="width: 160pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Student Name</span></p></td><td style="width: 308pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Yuvasri</span></p></td></tr><tr><td style="width: 160pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Register Number</span></p></td><td style="width: 308pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">TU6253210211065</span></p></td></tr><tr><td style="width: 160pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Project Title</span></p></td><td style="width: 308pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Online Examination System</span></p></td></tr><tr><td style="width: 160pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Document Version</span></p></td><td style="width: 308pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">1.0</span></p></td></tr><tr><td style="width: 160pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Week</span></p></td><td style="width: 308pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Week 1</span></p></td></tr></table><p style="margin-bottom: 16pt;"></p><p class="docx-content_heading1"><span>1. Introduction</span></p><p class="docx-content_heading2"><span>1.1 Purpose</span></p><p style="margin-bottom: 6pt;"><span>The purpose of this document is to analyse and specify the business and software requirements of the Online Examination System. The system is intended to conduct examinations online by managing students, examiners, question banks, examination schedules, answer submissions, automatic evaluation and result publication, thereby replacing the manual paper-based examination process.</span></p><p class="docx-content_heading2"><span>1.2 Project Scope</span></p><p style="margin-bottom: 6pt;"><span>The system will allow an institution to register students and examiners, create question banks, schedule examinations, conduct timed online tests, evaluate objective answers automatically, store results securely and generate performance reports. It will be implemented using a relational database with well-defined tables, keys and relationships, along with a web-based user interface for students and administrators.</span></p><p class="docx-content_heading2"><span>1.3 Intended Users</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Students - register, log in, attend scheduled examinations and view results.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Examiners / Faculty - create questions, define question papers and review results.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Administrators - manage users, schedule examinations, monitor sessions and publish results.</span></p><p style="margin-bottom: 8pt;"></p><p class="docx-content_heading1"><span>2. Business Requirements</span></p><p style="margin-bottom: 6pt;"><span>The following are the key business needs the system must satisfy:</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Maintain accurate and up-to-date records of students and examiners.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Maintain a subject-wise question bank with difficulty level and correct answers.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Allow administrators to schedule examinations with date, time and duration.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Conduct examinations online with a countdown timer and automatic submission.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Evaluate objective-type answers automatically and calculate marks without manual effort.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Store results securely and allow students to view their scorecards after publication.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Generate reports such as pass percentage, subject-wise performance and topper lists.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Prevent malpractice through unique login sessions and randomised question order.</span></p><p style="margin-bottom: 8pt;"></p><p class="docx-content_heading1"><span>3. Functional Requirements</span></p><p style="margin-bottom: 6pt;"><span>Functional requirements describe what the system must do.</span></p><table style="width: 468pt;"><colgroup><col style="width: 60pt;"><col style="width: 408pt;"></colgroup><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); background-color: rgb(220, 230, 241); padding: 4pt 6pt;"><p><span style="font-weight: bold;">ID</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); background-color: rgb(220, 230, 241); padding: 4pt 6pt;"><p><span style="font-weight: bold;">Requirement Description</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-1</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall allow new students to register with name, register number, email, phone number, department and password.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-2</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall authenticate students, examiners and administrators using a unique login ID and password before granting access.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-3</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall allow examiners to add, update and delete questions in the question bank along with options, correct answer, marks and difficulty level.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-4</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall allow administrators to create an examination by selecting subject, question set, total marks, date, start time and duration.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-5</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall display questions to the student one at a time or as a set, in randomised order, during the scheduled examination window.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-6</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall display a countdown timer and automatically submit the answer sheet when the allotted time expires.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-7</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall store every submitted answer against the student, question and examination.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-8</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall automatically evaluate objective answers and compute the total marks obtained.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-9</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall allow administrators to publish results, after which students can view their scorecard and pass/fail status.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-10</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall allow administrators to generate reports such as subject-wise performance, pass percentage and rank list for a given examination.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-11</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall prevent a student from attempting the same examination more than once.</span></p></td></tr><tr><td style="width: 60pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">FR-12</span></p></td><td style="width: 408pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">The system shall maintain an audit log of login time, submission time and IP address for each examination attempt.</span></p></td></tr></table><p style="margin-bottom: 8pt;"></p><p class="docx-content_heading1"><span>4. Non-Functional Requirements</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Performance: The system shall load the next question within 2 seconds and support at least 500 students writing an examination concurrently.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Security: Passwords shall be stored in hashed form; answer keys shall not be exposed to students before result publication; all traffic shall use HTTPS.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Reliability: Submitted answers shall be saved continuously so that no data is lost during a network or power failure.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Availability: The system shall be available during the entire published examination window with at least 99% uptime.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Usability: The examination screen shall be simple, distraction free and usable on both desktop and mobile devices.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Scalability: The database design shall support an increasing number of students, subjects and question banks over time.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Maintainability: Question banks and examination rules shall be configurable without changing the source code.</span></p><p style="margin-bottom: 8pt;"></p><p class="docx-content_heading1"><span>5. Student / User Database Module - Data Requirements</span></p><p style="margin-bottom: 6pt;"><span>Since this week's focus includes the Student (User) Database Module, the following entity and attributes have been identified:</span></p><p class="docx-content_heading2"><span>5.1 Student Entity</span></p><table style="width: 468pt;"><colgroup><col style="width: 130pt;"><col style="width: 130pt;"><col style="width: 208pt;"></colgroup><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); background-color: rgb(220, 230, 241); padding: 4pt 6pt;"><p><span style="font-weight: bold;">Attribute</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); background-color: rgb(220, 230, 241); padding: 4pt 6pt;"><p><span style="font-weight: bold;">Data Type</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); background-color: rgb(220, 230, 241); padding: 4pt 6pt;"><p><span style="font-weight: bold;">Description</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">student_id</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">INT (Primary Key)</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Unique identifier for each student</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">register_number</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">VARCHAR(20) UNIQUE</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Institution register number of the student</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">full_name</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">VARCHAR(100)</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Full name of the student</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">email</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">VARCHAR(100) UNIQUE</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Email used for login and communication</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">phone_number</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">VARCHAR(15)</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Contact number of the student</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">department</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">VARCHAR(50)</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Department or branch of study</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">password_hash</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">VARCHAR(255)</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Securely hashed login password</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">registration_date</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">DATE</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Date the student account was created</span></p></td></tr><tr><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">status</span></p></td><td style="width: 130pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">VARCHAR(10)</span></p></td><td style="width: 208pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Account status (Active / Blocked)</span></p></td></tr></table><p style="margin-bottom: 10pt;"></p><p class="docx-content_heading2"><span>5.2 Related Entities (Overview)</span></p><table style="width: 468pt;"><colgroup><col style="width: 120pt;"><col style="width: 348pt;"></colgroup><tr><td style="width: 120pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); background-color: rgb(220, 230, 241); padding: 4pt 6pt;"><p><span style="font-weight: bold;">Entity</span></p></td><td style="width: 348pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); background-color: rgb(220, 230, 241); padding: 4pt 6pt;"><p><span style="font-weight: bold;">Purpose</span></p></td></tr><tr><td style="width: 120pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Examiner</span></p></td><td style="width: 348pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Stores faculty details and the subjects they handle</span></p></td></tr><tr><td style="width: 120pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Subject</span></p></td><td style="width: 348pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Stores subject code, subject name and department</span></p></td></tr><tr><td style="width: 120pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Question</span></p></td><td style="width: 348pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Stores question text, four options, correct option, marks and difficulty</span></p></td></tr><tr><td style="width: 120pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Exam</span></p></td><td style="width: 348pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Stores exam title, subject, date, start time, duration and total marks</span></p></td></tr><tr><td style="width: 120pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Answer</span></p></td><td style="width: 348pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Stores each answer submitted by a student for a question in an exam</span></p></td></tr><tr><td style="width: 120pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Result</span></p></td><td style="width: 348pt; border-width: 0.13pt; border-style: solid; border-color: rgb(170, 170, 170); padding: 4pt 6pt;"><p><span style="font-weight: normal;">Stores marks obtained, percentage, pass/fail status and publication date</span></p></td></tr></table><p style="margin-bottom: 10pt;"></p><p class="docx-content_heading2"><span>5.3 Key Relationships</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>One Student can attempt many Exams; one Exam can be attempted by many Students (many-to-many, resolved through the Result / Attempt table).</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>One Subject contains many Questions (one-to-many).</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>One Exam contains many Questions (many-to-many through an Exam_Question table).</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>One Exam attempt generates many Answer records (one-to-many).</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Each Result record is linked to exactly one Student and one Exam.</span></p><p style="margin-bottom: 8pt;"></p><p class="docx-content_heading1"><span>6. Assumptions and Constraints</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>The system will be developed using a relational database (MySQL / Oracle / PostgreSQL).</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Only registered and approved students can attend examinations.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Examinations in this phase are objective (multiple-choice) type; descriptive evaluation is out of scope.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Every student is assumed to have a device with a stable internet connection and a supported browser.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>Each examination attempt must be linked to exactly one student.</span></p><p class="docx-content_listparagraph docx-content-num-2-0" style="margin-bottom: 3pt;"><span>This document covers Week 1 requirements only; the Question Bank, Examination and Result modules will be detailed in subsequent weeks.</span></p><p style="margin-bottom: 8pt;"></p><p class="docx-content_heading1"><span>7. Conclusion</span></p><p style="margin-bottom: 6pt;"><span>This document captures the initial business, functional and non-functional requirements for the Online Examination System, with specific focus on the Student / User Database Module. It will serve as the foundation for designing the ER diagram, normalising the database schema and implementing the system in the following weeks.</span></p></article><footer style="margin-bottom: calc(-48.8px); min-height: calc(48.8px);"><p style="text-align: center;"><span style="color: rgb(119, 119, 119); min-height: 9pt; font-size: 9pt;">Page </span></p></footer></section></div></div></div>
+  <div id="error"></div>
+  <script>
+  (function() {
+    var filename = "Online_Examination_System_SRS.docx";
+    var container = document.getElementById("container");
+    var spinner = document.getElementById("spinner");
+    var errorEl = document.getElementById("error");
+
+    function markReady(el, attr) {
+      window.requestAnimationFrame(function() {
+        window.requestAnimationFrame(function() {
+          el.setAttribute(attr, "true");
+        });
+      });
+    }
+
+    function show() {
+      spinner.style.display = "none";
+      markReady(container, "data-preview-ready");
+    }
+
+    function showError(msg) {
+      spinner.style.display = "none";
+      errorEl.textContent = msg;
+      errorEl.style.display = "block";
+      markReady(errorEl, "data-preview-error");
+    }
+
+    function loadScript(src) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = resolve;
+        s.onerror = function() { reject(new Error("Failed to load: " + src)); };
+        document.head.appendChild(s);
+      });
+    }
+
+    function loadCSS(href) {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = href;
+      document.head.appendChild(link);
+    }
+
+    // Height + filename only, targetOrigin "*" (embedder origin unknowable). Consumer:
+    // web/modules/files/view/canvas/ArtifactNode.tsx EmbedContent — keep the shape in
+    // sync. Opt-in via query param so plain previews behave exactly as before.
+    if (window.parent !== window && typeof ResizeObserver !== "undefined" &&
+        location.search.indexOf("lovableSizeReport=1") !== -1) {
+      var lastReportedHeight = 0;
+      var reportSize = function() {
+        // Renderer wrappers are fixed at 100vh with overflow:auto, so content
+        // extent lives in their scrollHeight; documentElement would floor the
+        // measurement at the viewport and make nodes grow-only.
+        var height = 0;
+        if (container) {
+          for (var i = 0; i < container.children.length; i++) {
+            height = Math.max(height, container.children[i].scrollHeight);
+          }
+        }
+        if (height === 0) height = document.documentElement.scrollHeight;
+        height = Math.ceil(height);
+        if (Math.abs(height - lastReportedHeight) < 2) return;
+        lastReportedHeight = height;
+        window.parent.postMessage(
+          { type: "lovable:document-preview-size", filename: filename, height: height },
+          "*"
+        );
+      };
+      var scheduleReport = function() { window.requestAnimationFrame(reportSize); };
+      var observer = new ResizeObserver(scheduleReport);
+      observer.observe(document.documentElement);
+      if (container) {
+        observer.observe(container);
+        // Renderers inject content asynchronously without resizing the fixed
+        // wrappers; mutations and subresource loads are the growth signals.
+        new MutationObserver(scheduleReport).observe(container, { childList: true, subtree: true });
+      }
+      window.addEventListener("load", scheduleReport, true);
+      // The embedder asks for a re-report when its listener attaches after our
+      // first report; reset the dedup so the resend isn't suppressed.
+      window.addEventListener("message", function(event) {
+        if (event.source !== window.parent) return;
+        if (!event.data || event.data.type !== "lovable:request-preview-size") return;
+        lastReportedHeight = 0;
+        scheduleReport();
+      });
+    }
+
+    try {
+      
+    var proxyWorkerHost = "lovable.app";
+    var assetUrl = decodeURIComponent(window.location.hash.slice(1));
+    var parsedAssetUrl = new URL(assetUrl);
+    var hasAllowedProtocol = parsedAssetUrl.protocol === "https:" || (proxyWorkerHost === "localhost" && parsedAssetUrl.protocol === "http:");
+    var hasAllowedHost = parsedAssetUrl.hostname === proxyWorkerHost || parsedAssetUrl.hostname.endsWith("." + proxyWorkerHost);
+    var hasAllowedPath = parsedAssetUrl.pathname.startsWith("/__l5e/documents/");
+    if (!hasAllowedProtocol || !hasAllowedHost || !hasAllowedPath) {
+      throw new Error("Invalid document URL");
+    }
+    assetUrl = parsedAssetUrl.toString();
+      
+    loadScript("https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js")
+      .then(function() {
+        return loadScript("https://unpkg.com/docx-preview@0.3.3/dist/docx-preview.min.js");
+      })
+      .then(function() { return fetch(assetUrl); })
+      .then(function(r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.blob();
+      })
+      .then(function(blob) {
+        var wrapper = document.createElement("div");
+        wrapper.className = "doc-wrapper";
+        container.appendChild(wrapper);
+        return window.docx.renderAsync(blob, wrapper, null, {
+          className: "docx-content",
+          inWrapper: true,
+          ignoreWidth: false,
+          ignoreHeight: false,
+          ignoreFonts: false,
+          breakPages: true,
+          useBase64URL: true
+        });
+      })
+      .then(show)
+      .catch(function() { showError("Failed to render document."); });
+    } catch (e) {
+      showError("An unexpected error occurred.");
+    }
+  })();
+  </script>
+
+</body></html>
